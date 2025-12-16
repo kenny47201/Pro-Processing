@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro-Processor - Master Your Molding Process | Coming Q2 2026</title>
+    <meta name="description" content="The first all-in-one platform for injection molding. Connect processors, maintenance, and tooling. Launching Q1 2025.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0A0F0D;
+            color: #FFFFFF;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Header/Logo Section */
+        .header {
+            text-align: center;
+            padding: 60px 0 40px;
+        }
+        
+        .logo-hexagon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hexagon {
+            width: 120px;
+            height: 104px;
+            background: linear-gradient(135deg, #00FF00 0%, #00CC00 100%);
+            position: relative;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 40px rgba(0, 255, 0, 0.3);
+        }
+        
+        .hexagon-inner {
+            width: 108px;
+            height: 94px;
+            background: #0A0F0D;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .logo-text-small {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 16px;
+            color: #00FF00;
+            letter-spacing: 1px;
+        }
+        
+        .product-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #00FF00 0%, #00CC00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tagline {
+            font-size: 22px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 40px;
+        }
+        
+        /* Launch Badge */
+        .launch-badge {
+            display: inline-block;
+            background: rgba(0, 255, 0, 0.1);
+            border: 2px solid #00FF00;
+            color: #00FF00;
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 40px 0 60px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero-headline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: #FFFFFF;
+        }
+        
+        .hero-headline span {
+            color: #00FF00;
+        }
+        
+        .hero-subheadline {
+            font-size: 20px;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 60px;
+        }
+        
+        /* Feature Cards */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(0, 255, 0, 0.2);
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            border-color: #00FF00;
+            background: rgba(0, 255, 0, 0.05);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 255, 0, 0.15);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            background: rgba(0, 255, 0, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00FF00;
+            font-size: 28px;
+        }
+        
+        .feature-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 800;
+            color: #00FF00;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 2;
+        }
+        
+        .feature-list li::before {
+            content: "✓ ";
+            color: #00FF00;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: linear-gradient(135deg, rgba(0, 255, 0, 0.1) 0%, rgba(0, 255, 0, 0.05) 100%);
+            border: 2px solid rgba(0, 255, 0, 0.3);
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin-bottom: 80px;
+        }
+        
+        .stats-title {
+            text-align: center;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 40px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            font-weight: 900;
+            color: #00FF00;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 600;
+        }
+        
+        /* Demo Form */
+        .demo-section {
+            background: rgba(255, 255, 255, 0.02);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin-bottom: 80px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .demo-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        
+        .demo-subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 40px;
+        }
+        
+        .demo-form {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .form-input,
+        .form-select {
+            width: 100%;
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            color: white;
+            font-size: 16px;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+        
+        .form-input:focus,
+        .form-select:focus {
+            outline: none;
+            border-color: #00FF00;
+            background: rgba(0, 255, 0, 0.05);
+        }
+        
+        .form-select {
+            cursor: pointer;
+        }
+        
+        .form-select option {
+            background: #1A1F1D;
+            color: white;
+        }
+        
+        .submit-btn {
+            padding: 18px 40px;
+            background: linear-gradient(135deg, #00FF00 0%, #00CC00 100%);
+            color: #0A0F0D;
+            border: none;
+            border-radius: 10px;
+            font-weight: 800;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 20px rgba(0, 255, 0, 0.3);
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 255, 0, 0.5);
+        }
+        
+        .success-message {
+            display: none;
+            background: rgba(0, 255, 0, 0.1);
+            border: 2px solid #00FF00;
+            color: #00FF00;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .success-message.show {
+            display: block;
+        }
+        
+        /* Founder Section */
+        .founder {
+            text-align: center;
+            padding: 60px 0;
+            max-width: 800px;
+            margin: 0 auto;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 60px;
+        }
+        
+        .founder-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 30px;
+        }
+        
+        .founder-quote {
+            font-size: 22px;
+            font-style: italic;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+        }
+        
+        .founder-attribution {
+            font-weight: 600;
+            color: #00FF00;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-brand {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 20px;
+        }
+        
+        .footer-brand a {
+            color: #00FF00;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .footer-brand a:hover {
+            border-bottom-color: #00FF00;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .social-link {
+            width: 48px;
+            height: 48px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            border-color: #00FF00;
+            color: #00FF00;
+            background: rgba(0, 255, 0, 0.1);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .product-name {
+                font-size: 36px;
+            }
+            
+            .hero-headline {
+                font-size: 32px;
+            }
+            
+            .hero-subheadline {
+                font-size: 18px;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .demo-section {
+                padding: 40px 20px;
+            }
+            
+            .founder-quote {
+                font-size: 18px;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .header,
+        .hero,
+        .features,
+        .stats,
+        .demo-section,
+        .founder {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 40px rgba(0, 255, 0, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 60px rgba(0, 255, 0, 0.5);
+            }
+        }
+        
+        .hexagon {
+            animation: pulse 3s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-hexagon">
+                <div class="hexagon">
+                    <div class="hexagon-inner">
+                        <div class="logo-text-small">PRO</div>
+                        <div class="logo-text-small">PROCESSOR</div>
+                    </div>
+                </div>
+            </div>
+            
+            <h1 class="product-name">PRO-PROCESSOR</h1>
+            <div class="tagline">Master Your Molding Process</div>
+            
+            <div class="launch-badge">Launching Q1 2025</div>
+        </div>
+        
+        <!-- Hero -->
+        <div class="hero">
+            <h2 class="hero-headline">
+                Stop Losing Money to <span>Defects, Downtime,</span> and Tribal Knowledge
+            </h2>
+            <p class="hero-subheadline">
+                The first all-in-one platform connecting processors, maintenance, 
+                and tooling in injection molding facilities.
+            </p>
+        </div>
+        
+        <!-- Features -->
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <div class="feature-title">Processor App</div>
+                <ul class="feature-list">
+                    <li>60+ defect guides</li>
+                    <li>Process calculators</li>
+                    <li>24/7 troubleshooting</li>
+                    <li>User contributions</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <div class="feature-title">Maintenance App</div>
+                <ul class="feature-list">
+                    <li>Equipment logs</li>
+                    <li>PM scheduling</li>
+                    <li>Real-time alerts</li>
+                    <li>Performance tracking</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🛠️</div>
+                <div class="feature-title">Tooling App</div>
+                <ul class="feature-list">
+                    <li>Mold registry</li>
+                    <li>Service history</li>
+                    <li>Defect correlation</li>
+                    <li>Lifecycle tracking</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Stats -->
+        <div class="stats">
+            <div class="stats-title">Early Results from Beta Sites</div>
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number">23%</div>
+                    <div class="stat-label">Average Scrap<br>Reduction</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">75%</div>
+                    <div class="stat-label">Faster Problem<br>Resolution</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">90 Days</div>
+                    <div class="stat-label">Payback<br>Period</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Demo Form -->
+        <div class="demo-section">
+            <h3 class="demo-title">Want Early Access?</h3>
+            <p class="demo-subtitle">Request a demo and be among the first to see Pro-Processor in action</p>
+            
+            <form class="demo-form" id="demoForm">
+                <div class="form-row">
+                    <input type="text" class="form-input" placeholder="Your Name *" required id="name">
+                    <input type="email" class="form-input" placeholder="Work Email *" required id="email">
+                </div>
+                
+                <div class="form-row">
+                    <input type="text" class="form-input" placeholder="Company Name *" required id="company">
+                    <select class="form-select" required id="facilitySize">
+                        <option value="">Facility Size *</option>
+                        <option value="<10">&lt; 10 presses</option>
+                        <option value="10-25">10-25 presses</option>
+                        <option value="25-50">25-50 presses</option>
+                        <option value="50+">50+ presses</option>
+                    </select>
+                </div>
+                
+                <input type="tel" class="form-input" placeholder="Phone Number (Optional)" id="phone">
+                
+                <button type="submit" class="submit-btn">Request Demo</button>
+            </form>
+            
+            <div class="success-message" id="successMessage">
+                ✓ Thank you! We'll be in touch within 24 hours.
+            </div>
+        </div>
+        
+        <!-- Founder -->
+        <div class="founder">
+            <div class="founder-label">Built by a 20-Year Molding Veteran</div>
+            <p class="founder-quote">
+                "I've been the person troubleshooting short shots at 2 AM. 
+                I know exactly what you need—because I've lived the problem."
+            </p>
+            <div class="founder-attribution">— [Kenny Johnson], Creator of Pro-Processor</div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-brand">
+                A product of <a href="https://apexmanufacturingsystems.com" target="_blank">Apex Manufacturing Systems</a>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://linkedin.com/company/apex-manufacturing-systems" class="social-link" target="_blank" title="LinkedIn">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+      
